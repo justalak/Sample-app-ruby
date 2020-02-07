@@ -25,6 +25,8 @@ gem "kaminari", "~> 1.2"
 gem "bootstrap4-kaminari-views", "~> 1.0", ">= 1.0.1"
 gem "will_paginate", "~> 3.2", ">= 3.2.1"
 gem "bootstrap-will_paginate"
+gem "carrierwave", "~> 2.0", ">= 2.0.2"
+gem "mini_magick", "~> 4.10", ">= 4.10.1"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -45,9 +47,11 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "web-console", ">= 3.3.0"
-  gem "pg", "~> 1.2", ">= 1.2.2"
 end
-
+# group :production do
+#   gem "pg"
+#   gem "fog"
+# end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 2.15"
