@@ -1,0 +1,17 @@
+<% provide(:title, 'Blog') %>
+<body>
+  <%= render  "shared/header" %>
+  <% @posts.each do |post| %>
+    <div class="card" style="width: 80rem;">
+      <div class="card-body">
+        <h5 class="card-title">
+          <%= post.title%>
+        </h5>
+        <a href="/post/new" class="card-link">New Post</a>
+        <a class="card-link"><%= link_to 'Show Post', post %></a>
+        <a class="card-link"><%= link_to 'Edit Post', edit_post_path(post) %></a>
+        <a class="card-link"><%= link_to 'Delete', post, method: :Delete, data: { confirm: 'Are you sure?' }  %></a>
+      </div>
+    </div>
+  <% end %>
+</body>
