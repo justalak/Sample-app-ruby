@@ -25,7 +25,7 @@ gem "kaminari", "~> 1.2"
 gem "bootstrap4-kaminari-views", "~> 1.0", ">= 1.0.1"
 gem "will_paginate", "~> 3.2", ">= 3.2.1"
 gem "bootstrap-will_paginate"
-gem "carrierwave", "~> 2.0", ">= 2.0.2"
+gem "carrierwave", "~> 2.1"
 gem "mini_magick", "~> 4.10", ">= 4.10.1"
 
 # Reduces boot times through caching; required in config/boot.rb
