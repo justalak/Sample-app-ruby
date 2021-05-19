@@ -10,7 +10,7 @@ gem "mysql2"
 gem "bootstrap", "~> 4.4", ">= 4.4.1"
 gem "jquery-rails"
 # Use Puma as the app server
-gem "puma", "~> 4.1"
+gem "puma", "~> 4.3"
 gem "bcrypt", "~> 3.1", ">= 3.1.13"
 # Use SCSS for stylesheets
 gem "sass-rails", ">= 6"
